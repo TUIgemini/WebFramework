@@ -1,0 +1,130 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<script type="text/javascript">
+    
+    function test() {
+        var xmlhttp;
+        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        }
+        else {// code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                document.getElementById("update").innerHTML = xmlhttp.responseText;
+            }
+        }
+        xmlhttp.open("GET", "file.txt", true);
+        xmlhttp.send();
+    }
+    
+</script>
+
+<div class ="mainHeader">Manage Site
+</div>
+<div align ="center"><hr style="width: 600px; height: 1px; border-color: #909090" /></div>
+
+<div id = "add">
+    <form name ="addPage" action = "Admin/CheckPage" method ="post"> 
+        <fieldset>
+            <legend>Add Page:</legend>
+            <div align="center">
+                <table>
+                    <tr> 
+                        <td> 
+                            <input type="radio" name="page" value="content" /> Content Page<br />
+                            <input type="radio" name="page" value="image" /> Image Page <br /><br />
+                            <div align ="center"><input type="submit" value="Add Page"/></div>
+                        </td>
+                    </tr>
+                   
+                </table>            
+                </div>
+        </fieldset>
+    </form>
+</div>
+
+<div id = "editAboutContact">
+    <form name = "editAboutContact" action ="Admin/CheckPage" method="post">
+        <fieldset>
+            <legend>About/Contact Page:</legend>
+                <div align ="center">
+                    <table>
+                    <tr> 
+                        <td> 
+                            <input type="radio" name="page" value="about" /> About Page<br />
+                            <input type="radio" name="page" value="contact" /> Contact Page <br /><br />
+                            <div align="center"><input type="submit" value="Edit Page" /></div>
+                        </td>
+                    </tr>                   
+                </table> 
+                    
+                </div>    
+        </fieldset>
+    </form>
+</div>
+
+
+
+<br />
+
+
+
+<div id = "edit">
+    <form>
+        <fieldset>
+            <legend> Edit Page:</legend>
+                <div align =center>
+                   <p>Group</p>
+                    <select multiple="multiple">
+                        <option value="example1">Example</option>
+                        <option value="example1">Example</option>
+                        <option value="example1">Example</option>
+                        <option value="example1">Example</option>
+                    </select> <br />
+                    <p>Page</p>
+                    <select multiple="multiple">
+                        <option value="example1">Example</option>
+                        <option value="example1">Example</option>
+                        <option value="example1">Example</option>
+                        <option value="example1">Example</option>
+                    </select> <br /> <br />
+                    <input type="submit" value="Edit Page" />
+                </div>    
+        </fieldset>
+    </form>
+</div>
+
+<div id = "delete">
+    <form>
+        <fieldset>
+            <legend> Delete Page:</legend>
+                  <div align = center>
+                  <p>Group</p>
+                    <select multiple="multiple" onchange="test()">
+                        <option value="example1">Example</option>
+                        <option value="example1">Example</option>
+                        <option value="example1">Example</option>
+                        <option value="example1">Example</option>
+                    </select> <br />
+                    <p>Page</p>
+                    <select multiple="multiple">
+                        <option value="example" id="update">Example</option>
+                        <option value="example">Example</option>
+                        <option value="example">Example</option>
+                        <option value="example">Example</option>
+                    </select> <br /><br />
+                    <input type="submit" value="Delete Group" />
+                    <input type="submit" value="Delete Page" />
+                    
+                </div> 
+        </fieldset>
+    </form>
+</div>
+
+
+
+

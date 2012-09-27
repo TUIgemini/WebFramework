@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+
+@{List<string> holder = new List<string>();}
+
+@foreach (var x in (ViewData["Page"] as List<string>)) {
+    holder.Add(x);  
+}
+
+<div align="center">
+    <div class="mainPagesDiv">
+        <div class = "fieldHolder">
+         <h2>@holder[0]</h2>  
+         <h3>@holder[1]</h3>
+         <p>Email: @holder[2]</p>
+         <p>@holder[3]</p>
+        </div>
+    </div>
+</div>

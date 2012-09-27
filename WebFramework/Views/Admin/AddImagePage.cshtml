@@ -1,0 +1,63 @@
+﻿@{
+    ViewBag.Title = "Add Image Page";
+}
+
+
+<div align=center>
+    <div class = "mainDiv">
+        <form>                                       
+                       
+            <fieldset style = "height: 650px">
+            <legend>Add Image Page:</legend>
+             <form>
+                <table>
+
+                <tr>
+                    <td align=right>Title:
+                    </td>
+
+                    <td> <input type="text" id="title" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align=right> Group:
+                    </td>
+
+                    <td> <input type="text" id="group" />
+                    </td>
+                </tr>     
+                
+                <tr> 
+                    <td align="right"> Image:
+                    </td> 
+
+                    <td><input type="file" id="imagefile" size="40" />                        
+                    </td>
+                </tr>           
+
+                <tr valign=top>
+                    <td align=right> Content:
+                    </td>
+
+                    <td> <textarea rows ="23" cols="40"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" align="center"><input type="checkbox" id="navLink" /> Make Navigation Link 
+                    </td>            
+                </tr>
+
+                <tr>
+                    <td colspan="2" align=right><input type="submit" value="Save Page" />
+                    </td>
+                </tr>               
+
+                </table>  
+                                             
+             </form>
+        </fieldset>
+        </form>
+    </div>
+</div>

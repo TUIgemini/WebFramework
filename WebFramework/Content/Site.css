@@ -1,0 +1,491 @@
+body
+{
+    font-size: .85em;
+    font-family: Century Gothic, Arial;
+    color: #999999;      
+    background-color: #CCCCCC;
+    text-align: center;
+    margin: 0 auto;
+    /*background-image:url('smiley.gif');
+    background-repeat:no-repeat;
+    background-attachment:fixed;*/
+    
+}
+
+
+
+header,
+footer,
+nav,
+section {
+    display: block;
+}
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+
+fieldset 
+{
+    border:1px solid #ddd;
+    padding:10px 1.4em 1.4em 1.4em;
+    margin:0 0 1.5em 0;
+    text-align: left;
+    height: 350px;   
+    -moz-border-radius: 10px;
+    border-radius: 10px; 
+    
+}
+
+legend 
+{
+    font-size:1.2em;
+    font-weight: bold;
+}
+
+textarea 
+{
+    min-height: 75px;
+    resize: none;   
+}
+
+.editor-label 
+{
+    margin: 1em 0 0 0;
+}
+
+.editor-field 
+{
+    margin:0.5em 0 0 0;
+}
+
+
+
+/*----------------------------------------------------------*/
+select
+{
+    min-width: 200px;    
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error
+{
+    color: #ff0000;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}
+
+/* TABLES
+---------------------------------------------------------------*/
+table td
+{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+/* NAV LINKS----------------------------------------------------------------------*/
+
+#navLinks ul
+{
+    list-style-type:none; 
+    margin: 0;
+    padding: 0px 0px 0px 0px;
+    
+}
+
+#navLinks li
+{
+    padding: 10px 10px 0px 10px;
+    font-size: 22px;
+}
+
+#navLinks a:link
+{    
+    display:block;
+    text-decoration: none;
+    color: White; 
+    text-shadow: black 0.1em 0.1em 0.2em;
+    -moz-border-radius: 10px;
+    border-radius: 10px;       
+    -webkit-box-shadow: 0px 0px 6px #000000; 
+    -moz-box-shadow: 0px 1px 6px #000000; 
+    background-color: #669999;
+    padding: 5px 0px 5px 0px;    
+    border: 1px solid #000000; 
+    font-weight: bold; 
+    text-align: center;
+}
+
+#navLinks a:visited
+{
+    display:block;
+    text-decoration: none;
+    color: White;
+    text-shadow: black 0.1em 0.1em 0.2em;  
+    -moz-border-radius: 10px;
+    border-radius: 10px;       
+    -webkit-box-shadow: 0px 0px 6px #000000; 
+    -moz-box-shadow: 0px 1px 6px #000000; 
+    background-color: #669999;
+    padding: 5px 0px 5px 0px;    
+    border: 1px solid #000000; 
+    font-weight: bold; 
+    text-align: center;
+}
+
+#navLinks a:hover
+{ 
+    display:block;
+    border: 1px solid #000000;
+    text-decoration: none;
+    background-color: #E6E6E6;
+    color: Black;
+    text-shadow: white 0.1em 0.1em 0.2em;
+    font-weight: bold;
+    font-size: 22px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;       
+    -webkit-box-shadow: 0px 0px 6px #000000; 
+    -moz-box-shadow: 0px 1px 6px #000000;  
+    padding: 5px 0px 5px 0px;      
+    
+}
+
+
+
+
+#login
+{
+    float: right;
+}
+
+#login a:link
+{
+    border: 1px solid #000000;
+    font-weight:bold;
+    padding: 5px 15px 5px 15px;  
+    text-decoration: none;
+    color: White; 
+    text-shadow: black 0.1em 0.1em 0.2em;   
+    text-align: center;
+    background-color: #669999;
+    -webkit-box-shadow: 0px 0px 6px #000000; 
+    -moz-box-shadow: 0px 1px 6px #000000;   
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-size: 18px;          
+}
+
+#login a:visited
+{
+    color: White;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    padding: 5px 15px 5px 15px;
+    font-weight:bold; 
+    border: 1px solid #000000;   
+    text-decoration: none; 
+    text-align: center;
+    background-color: #669999;
+    -webkit-box-shadow: 0px 0px 6px #000000; 
+    -moz-box-shadow: 0px 1px 6px #000000;   
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-size: 18px;          
+}
+
+#login a:hover
+{
+    border: 1px solid #000000;
+    color: Black;
+    text-shadow: white 0.1em 0.1em 0.2em;
+    font-weight:bold;
+    padding: 5px 15px 5px 15px;    
+    text-align: center;
+    background-color: #E6E6E6;
+    -webkit-box-shadow: 0px 0px 6px #000000; 
+    -moz-box-shadow: 0px 1px 6px #000000;   
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-size: 18px;              
+}
+
+/*--CONTENT----------------------------------------------------------*/
+
+.header
+{
+    width: 890px; 
+    background-color: #404040; 
+    border: 1px solid #000000;
+    font-size: 60px; 
+    color: White;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    margin: 0 auto;
+    text-align:left;
+    padding: 10px 10px 10px 10px;  
+    -webkit-box-shadow: 0px 0px 6px #000000; 
+    -moz-box-shadow: 0px 1px 6px #000000; 
+    -moz-border-radius: 10px;
+    border-radius: 10px;  
+    
+    
+}
+
+
+.sidebar
+{
+    width: 190px;
+    float: left;
+    text-align: left;
+    padding: 0px;
+    background-color: #606060; 
+    border: 1px solid #000000;
+    font-size: 18px; 
+    color: White;
+    margin-top: 10px;
+    margin-bottom: -10000px;
+    padding-bottom: 10000px;
+    -webkit-box-shadow: 0px 0px 6px #000000; 
+    -moz-box-shadow: 0px 1px 6px #000000; 
+    -moz-border-radius: 10px;
+    border-radius: 10px;  
+
+}
+
+.footer
+{
+    width: 890px;
+    font-size: 20px; 
+    background-color: #404040;
+    border: 1px solid #000000;
+    text-align: left;
+    margin: 10px auto;
+    color: White;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    padding: 10px 10px 10px 10px;
+    -webkit-box-shadow: 0px 0px 6px #000000; 
+    -moz-box-shadow: 0px 1px 6px #000000; 
+    -moz-border-radius: 10px;
+    border-radius: 10px;  
+}
+
+.content
+{
+    width: 910px;
+    margin: 20px auto 0px auto;
+    text-align: center;
+    overflow: hidden; 
+     
+}
+
+.main
+{
+    width: 700px;
+    float: right;
+    background-color: #999999; 
+    border: 1px solid #000000;
+    font-size: 22px; 
+    color: #333333;
+    margin-top: 10px;
+    min-height: 500px;   
+    -webkit-box-shadow: 0px 0px 6px #000000; 
+    -moz-box-shadow: 0px 1px 6px #000000;   
+    -moz-border-radius: 10px;
+    border-radius: 10px;  
+ 
+}
+
+.mainHeader
+{
+    width: 690px; 
+    font-size: 30px; 
+    color: #333333;
+    margin: 0 auto;
+    text-align:left;  
+    font-weight: bold;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom:10px;
+}
+
+.fieldHolder
+{
+    border: 1px solid;
+    padding: 10px 30px 30px 30px;
+    margin:  0 0 0 0;
+    text-align: left;
+    min-height: 350px;
+    background-color: #E6E6E6;
+    min-height: 480px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 50px #000000; 
+    -moz-box-shadow: 0px 1px 30px #000000; 
+}
+
+#listGroupsPages ul
+{
+    list-style-type:none; 
+    margin: 0;
+    padding: 0px 0px 0px 0px;    
+}
+
+#listGroupsPages li
+{
+    padding: 10px 10px 0px 10px;
+    font-size: 22px;       
+}
+
+#listGroupsPages a:link
+{
+    display:block;
+    text-decoration: none;
+    color: White;  
+    text-shadow: black 0.1em 0.1em 0.2em;
+    -moz-border-radius: 10px;
+    border-radius: 10px;       
+    -webkit-box-shadow: 0px 0px 6px #000000; 
+    -moz-box-shadow: 0px 1px 6px #000000; 
+    background-color: #848484;
+    padding: 5px 0px 5px 0px;    
+    border: 1px solid #000000; 
+    font-weight: bold; 
+    text-align: center;   
+          
+}
+
+#listGroupsPages a:visited
+{
+    display:block;
+    text-decoration: none;
+    color: White;  
+    text-shadow: black 0.1em 0.1em 0.2em;
+    -moz-border-radius: 10px;
+    border-radius: 10px;       
+    -webkit-box-shadow: 0px 0px 6px #000000; 
+    -moz-box-shadow: 0px 1px 6px #000000; 
+    background-color: #848484;
+    padding: 5px 0px 5px 0px;    
+    border: 1px solid #000000; 
+    font-weight: bold; 
+    text-align: center;          
+}
+
+#listGroupsPages a:hover
+{
+    display:block;
+    border: 1px solid #000000;
+    text-decoration: none;
+    background-color: #E6E6E6;
+    color: Black;
+    text-shadow: white 0.1em 0.1em 0.2em;
+    font-weight: bold;
+    font-size: 22px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;       
+    -webkit-box-shadow: 0px 0px 6px #000000; 
+    -moz-box-shadow: 0px 1px 6px #000000;  
+    padding: 5px 0px 5px 0px;               
+}
+
+.mainPagesDiv
+{
+    padding: 30px;
+    font-size: 18px;
+    width: 600px;
+}
+
+
+/* ADMIN INDEX PAGE -------------------------------------------------------*/
+#add
+{
+    font-size: 16px;
+    width: 260px;  
+    float: left;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+#add fieldset
+{
+    height: 130px;
+}
+
+#editAboutContact
+{
+    font-size:16px;
+    width: 260px;
+    float:right;
+    margin-right: 70px;
+    margin-top: 20px;
+}
+
+#editAboutContact fieldset
+{
+    height: 130px;
+}
+
+#delete
+{
+    font-size:16px;
+    width: 260px;
+    float:right;
+    margin-right: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#edit
+{
+    
+    font-size:16px;
+    width: 260px;
+    float:left;
+    margin-left: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.mainDiv
+{
+    padding: 30px;
+    font-size: 18px;
+    width: 500px;
+}
+
+#loginDiv
+{
+    padding: 30px;
+    font-size: 18px;
+    width: 375px;
+}
+
+#loginDiv fieldset
+{
+    height: 185px;
+}
+
+
+
+
+

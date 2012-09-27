@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Pages";
+}
+
+@{List<string> holder = new List<string>();}
+
+@foreach (var x in (ViewData["Page"] as List<string>)) {
+    holder.Add(x);  
+}
+
+
+<div align="center">
+    <div class = "mainPagesDiv">       
+            <div class = "fieldHolder">
+            <div align="center"><h2>@ViewData["Group"]</h2></div>
+                <div id="listGroupsPages">
+                    <ul>  
+                        @foreach (var y in (holder as List<string>))
+                        {                    
+                                <li>
+                                    @Html.ActionLink(y, "Content","Home", new{page = y}, null)
+                                </li>                    
+                        }    
+                    </ul>
+                </div>                    
+            </div>                     
+    </div>
+</div>

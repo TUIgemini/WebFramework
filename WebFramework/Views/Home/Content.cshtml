@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Content";
+}
+
+@{List<string> holder = new List<string>();}
+
+@foreach (var x in (ViewData["Content"] as List<string>)) {
+    holder.Add(x);  
+}
+
+<div align="center">
+    <div class = "mainPagesDiv">       
+            <div class = "fieldHolder">  
+                     
+                <h2>@holder[0]</h2>                        
+                    
+                    @holder[2]
+                                               
+            </div>                     
+    </div>
+</div>

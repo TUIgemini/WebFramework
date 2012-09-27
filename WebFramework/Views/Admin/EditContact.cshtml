@@ -1,0 +1,66 @@
+﻿@{
+    ViewBag.Title = "Contact Page";
+}
+
+<script src="@Url.Content("~/Scripts/Validation.js")" type="text/javascript"></script>
+
+@{List<string> holder = new List<string>();}
+        
+@foreach (var x in (ViewData["Page"] as List<string>)) {
+        holder.Add(x);  
+    }
+    
+
+<div align="center">
+    <div class = "mainDiv">
+        
+        <fieldset style = "height: 600px">
+            <legend>Edit Contact Page:</legend>
+             <form name="contact" action ="CreateContact" onsubmit="return validateContent()" method="post">
+
+                <table>
+                <tr>
+                    <td align="right" >Page Title:
+                    </td>
+
+                    <td> <input type="text" id="title" name ="title" onclick="noBorderTitle()" value="@holder[0]"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="right"> Name:
+                    </td>
+
+                    <td> <input type="text" id="name" name ="name" onclick="noBorderGroup()" value="@holder[1]"/>
+                    </td>
+                </tr> 
+                 
+                <tr>
+                    <td align="right"> Email:
+                    </td>
+
+                    <td> <input type="text" id="email" name ="email" onclick="noBorderGroup()" value="@holder[2]"/>
+                    </td>
+                </tr>        
+                              
+
+                <tr valign="top" >
+                    <td align="right" > Content:
+                    </td>
+
+                    <td> <textarea rows ="23" cols="40" id="content" name ="content" onclick ="noBorderContent()">@holder[3]</textarea>
+                    </td>
+                </tr>              
+
+                <tr>
+                    <td colspan="2" align="right"><input type="submit" value="Save Page" />
+                    </td>
+                </tr>               
+
+                </table>  
+                                             
+             </form>
+        </fieldset>
+        
+    </div>
+</div>

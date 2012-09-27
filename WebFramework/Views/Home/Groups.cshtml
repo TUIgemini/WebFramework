@@ -1,0 +1,54 @@
+﻿
+
+@{
+    ViewBag.Title = "Groups";
+}
+
+
+
+@{List<string> holder = new List<string>();}
+
+@foreach (var x in (ViewData["Group"] as List<string>)) {
+    holder.Add(x);  
+}
+
+
+<div align="center">
+    <div class = "mainPagesDiv">       
+            <div class = "fieldHolder">
+                <div align="center"><h2>Groups</h2>                
+                    <div id = "listGroupsPages">
+                        <ul>  
+                            @foreach (var y in (holder as List<string>))
+                            {                    
+                                    <li>
+                                        @Html.ActionLink(y, "Pages","Home", new{group = y}, null)
+                                    </li>                    
+                            }    
+                        </ul>
+                   </div>
+                </div>                    
+            </div>                     
+    </div>
+</div>
+
+
+
+
+
+@*<div align="center">
+    <div class = "mainPagesDiv">       
+            <div class = "fieldHolder">  
+                     
+                <h2>@holder[0]</h2>                        
+                    @holder[1]
+                    <br />
+                    @holder[2]
+                    <br />
+                    @holder[3]            
+            </div>                     
+    </div>
+</div>*@
+
+
+
