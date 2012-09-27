@@ -9,6 +9,7 @@ namespace WebFramework.Models
 {
     public class Login
     {
+        /* UPDATED : CONNECTION STRINGS */
         public static bool CheckLogin(string userName, string password)
         {
             SqlConnection conn = new SqlConnection("Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\Chris\\Documents\\webFrameworkDB.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True");
